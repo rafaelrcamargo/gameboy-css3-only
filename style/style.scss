@@ -5,6 +5,9 @@ html,
 body {
   min-height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 
 body {
@@ -247,5 +250,12 @@ button:focus {
         color: #26313d;
       }
     }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gameboy {
+    transform: scale(0.5);
+    margin: 0;
   }
 }

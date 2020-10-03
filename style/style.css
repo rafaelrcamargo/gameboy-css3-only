@@ -7,6 +7,15 @@ html,
 body {
   min-height: 100vh;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 body {
@@ -294,5 +303,13 @@ button:focus {
   margin-top: 0px;
   display: block;
   color: #26313d;
+}
+
+@media screen and (max-width: 450px) {
+  .gameboy {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
